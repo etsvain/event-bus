@@ -4,7 +4,8 @@
 
 ## 下载
 
-1.将插件包下载 2.将 imageViewer 文件夹放到工程里
+1.将插件包下载；
+2.将 imageViewer 文件夹放到工程里。
 
 ## 监听
 
@@ -31,5 +32,16 @@
     * @value 实参
     */
     EventBus.emit('event', value)
+
+```
+
+
+## 移除
+```
+    import EventBus from '@/eventBus';
+    /**
+    * @event 需要移除的事件名
+    */
+    EventBus.off('event')
 
 ```
